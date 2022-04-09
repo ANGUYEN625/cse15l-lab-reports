@@ -13,4 +13,8 @@
 **I am back.**
 * *Goodbye again*
 
+# Just Kidding!
+**Here's a picture**
+[Link] (https://github.com/ANGUYEN625/cse15l-lab-reports/edit/main/lab-report-1-week-2.html)
+
 
