@@ -15,6 +15,7 @@ Open up the terminal in VS code and type in `ssh <username>@ieng6.ucsd.edu`. The
 ## Step 3: Trying Some Commands
 
 Now, try running some commands. Some examples would include: 
+* `cd` - moves you to a certain directory (stands for *change directory*)
 * `ls` - *lists* all of the files + directories of the directory you are currently in
 * `cat <filename>` - reads the *contents* of the file you put
 
@@ -26,7 +27,7 @@ In the terminal, go to the directory that contains the file you want copied. The
 
 ## Step 5: Setting an SSH key
 
-Enter the command `ssh keygen`.
+Enter the command `ssh-keygen`.
 
 ## Step 6: Optimizing Remote Running
 
