@@ -9,6 +9,7 @@ Go to the Visual Studio Code download page here: [VS Code Download](https://code
 ## Step 2: Remotely Connecting
 
 Open up the terminal in VS code and type in `ssh <username>@ieng6.ucsd.edu`. Then enter the password for your **course-specific** account. The terminal should look like this:
+
 ![Image](./Screenshot%20(352).png)
 
 ## Step 3: Trying Some Commands
@@ -20,6 +21,7 @@ Now, try running some commands. Some examples would include:
 ## Step 4: Moving Files with scp
 
 In the terminal, go to the directory that contains the file you want copied. Then enter the command `scp filenameofCopy <username>@ieng6.ucsd.edu`. This copies the file into the remote directory. It should look likes this: 
+
 ![Image](./Screenshot%20(500).png)
 
 ## Step 5: Setting an SSH key
