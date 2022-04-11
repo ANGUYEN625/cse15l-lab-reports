@@ -2,3 +2,5 @@
 
 ## Step 1: Installing VSCode
 
+* Go to the Visual Studio Code download page here: [Link](https://code.visualstudio.com/) and download the program specific to your system. 
+
