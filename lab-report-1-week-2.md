@@ -2,7 +2,7 @@
 
 ## Step 1: Installing VSCode
 
-Go to the Visual Studio Code download page here: [VS Code Download](https://code.visualstudio.com/) and download the program specific to your system. 
+Go to the Visual Studio Code download page here: [VS Code Download](https://code.visualstudio.com/Download). Download the program specific to your system. 
 
 ![Image](./Screenshot%20(345).png)
 
@@ -36,4 +36,12 @@ After doing so, your public and private keys will be created as files that are s
 ## Step 6: Optimizing Remote Running
 
 There are some ways to optimize running commands on the remote server:
-* 
+* Running remote commands or files surrounded by quotes on the same line as your login. This will automatically run the command and exit the server at the same time.
+
+![Image](./Screenshot%20(588).png)
+
+* Run multiple commands on the same line by dividing them with semicolons
+
+* A combination of both running commands with quotes on the log in and running multiple commands separated by semicolons.
+
+![Image](./Screenshot%20(589).png)
