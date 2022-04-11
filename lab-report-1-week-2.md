@@ -2,9 +2,9 @@
 
 ## Step 1: Installing VSCode
 
-![Image](./Screenshot%20(345).png)
-
 Go to the Visual Studio Code download page here: [VS Code Download](https://code.visualstudio.com/) and download the program specific to your system. 
+
+![Image](./Screenshot%20(345).png)
 
 ## Step 2: Remotely Connecting
 
@@ -21,13 +21,19 @@ Now, try running some commands. Some examples would include:
 
 ## Step 4: Moving Files with scp
 
-In the terminal, go to the directory that contains the file you want copied. Then enter the command `scp filenameofCopy <username>@ieng6.ucsd.edu`. This copies the file into the remote directory. It should look likes this: 
+In the terminal, go to the directory that contains the file you want copied. Then enter the command `scp filenameofCopy <username>@ieng6.ucsd.edu:~/`. Enter your password. This copies the file into the remote directory. Now if you log back into the remote server and type in `ls`, the file should show up. 
 
-![Image](./Screenshot%20(500).png)
+![Image](./Screenshot%20(169).png)
 
 ## Step 5: Setting an SSH key
 
-Enter the command `ssh-keygen`.
+Enter the command `ssh-keygen`. This creates a public key (that goes on the remote server) and a private key (that goes on your personal device). The terminal should look like this: 
+
+![Image](./Screenshot%20(509).png)
+
+After doing so, your public and private keys will be created as files that are stored on your device. Now you have to copy the *public* key onto the `.ssh` directory on the server. Log into the remote server and then type in the command `mkdir .ssh`. Then log out and type in `scp <path of public key> <username>@ieng6.ucsd.edu:~/.ssh/authorized_keys`. Now it should automatically log you in without a password.
 
 ## Step 6: Optimizing Remote Running
 
+There are some ways to optimize running commands on the remote server:
+* 
