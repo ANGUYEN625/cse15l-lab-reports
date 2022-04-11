@@ -2,6 +2,8 @@
 
 ## Step 1: Installing VSCode
 
+![Image](./Screenshot%20(345).png)
+
 * Go to the Visual Studio Code download page here: [VS Code Download](https://code.visualstudio.com/) and download the program specific to your system. 
 
 ## Step 2: Remotely Connecting
