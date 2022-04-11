@@ -1,3 +1,4 @@
-# And here's a picture!
+# Tutorial for Logging into a Course Specific Account for ieng6:
 
-![Image](./Screenshot%20(2).png)
+## Step 1: Installing VSCode
+
