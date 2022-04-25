@@ -1,13 +1,30 @@
 # Lab Report 2
 
 ## Code Change #1
+![Image](./Screenshot%20(809).png)
+
+**Links for the test files that failed previously:**
+
+* [Test File 5](https://github.com/michaelndiaz/markdown-parser/blob/main/test-file5.md)
+* [Test File 6](https://github.com/michaelndiaz/markdown-parser/blob/main/test-file6.md)
+
+## Code Change #2
 
 ![Image](./Screenshot%20(807).png)
 
 
-[Here is the link to the test file that failed](https://github.com/michaelndiaz/markdown-parser/blob/main/test-file5.md)
+**Links for the test files that failed previously:**
+
+* [Test File 5](https://github.com/michaelndiaz/markdown-parser/blob/main/test-file5.md)
+* [Test File 8](https://github.com/michaelndiaz/markdown-parser/blob/main/test-file8.md)
 
 
+## Code Change #3
+![Image](./Screenshot%20(808).png)
+
+**Links for the test files that failed previously:**
+
+* [Test File 6](https://github.com/michaelndiaz/markdown-parser/blob/main/test-file6.md)
 
 Show a screenshot of the code change diff from Github (a page like this)
 
