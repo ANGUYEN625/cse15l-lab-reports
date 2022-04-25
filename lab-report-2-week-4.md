@@ -31,7 +31,7 @@ java.lang.AssertionError: expected:<[]> but was:<[page.com]>
 FAILURES!!!
 Tests run: 9,  Failures: 2
 ```
-The symptom of this bug is that we expect it to just return an empty list, but it returns a list with a link in it. The failure inducing inputs (the test files) are (1) a file with something in between the brackets and the parentheses and (2) a file that is formatted like an image, not a link. Due to this, the bug in the program is that it recognizes a link when it isn't supposed to because it does not recognize that (1) things in between the brackets and the parentheses does not follow a link format and (2) the exclamation mark in front of a similar link format is an image instead of a link. 
+The symptom of this bug is that we expect it to just return an empty list, but it returns a list with a link in it. The failure inducing inputs (the test files) are (1) a file with something in between the brackets and the parentheses and (2) a file that is formatted like an image, not a link. Due to this, the bug in the program is that it recognizes a link when it isn't supposed to because it does not recognize that (1) things in between the brackets and the parentheses does not follow a link format and (2) the exclamation mark in front of a similar link format is an image instead of a link. Thus, we would have to add new pieces of code so that it strictly follows these rules.
 
 ## Code Change #2
 
