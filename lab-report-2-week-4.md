@@ -31,6 +31,7 @@ java.lang.AssertionError: expected:<[]> but was:<[page.com]>
 FAILURES!!!
 Tests run: 9,  Failures: 2
 ```
+The symptom of this bug is that we expect it to just return an empty list, but it returns a list with a link in it. The failure inducing inputs (the test files) are (1) a file with something in between the brackets and the parentheses and (2) a file that is formatted like an image, not a link. Due to this, the bug in the program is that it recognizes a link when it isn't supposed to because it does not recognize that (1) things in between the brackets and the parentheses does not follow a link format and (2) the exclamation mark in front of a similar link format is an image instead of a link. 
 
 ## Code Change #2
 
@@ -74,6 +75,8 @@ FAILURES!!!
 Tests run: 9,  Failures: 3
 ```
 
+The symptom of this bug is that it returns an empty list when it should return the links within the files. The test files that cause this error are test file 1, 2, and 8. Both 1 and 2 have consecutive links after another and 8 has an empty bracket with a link in parentheses and then an open bracket afterwards. The bug that causes this problem is from the fact that we put `openParen - closeBracket > 0`. This tells us that the distance between the open parentheses and the close bracket is zero. However, that is incorrect as it should be 1 since the open parentheses should just follow right after the close bracket, not be at the same index. That is why it returns an error for these test files, since it essentially cannot recognize and return a link when our code is written this way.
+
 ## Code Change #3
 ![Image](./Screenshot%20(808).png)
 
@@ -98,12 +101,7 @@ java.lang.AssertionError: expected:<[]> but was:<[page.com]>
 FAILURES!!!
 Tests run: 9,  Failures: 1
 ```
-The symptom was that the test failed due to the output n
+The symptom of this bug is that it returns a list with a link instead of an empty list. The test file is the same as before: a string with the format of an image. However, the program still does not recognize an image, and since the format is so similar, it treats it as a link and adds it into the list. That is why, in order to fix this bug, we added a piece of code that would check to see if there is an exclamation mark in front of the brackets and thus, not treat it as a link. 
 
-Show a screenshot of the code change diff from Github (a page like this)
 
-Link to the test file for a failure-inducing input that prompted you to make that change
 
-Show the symptom of that failure-inducing input by showing the output of running the file at the command line for the version where it was failing (this should also be in the commit message history)
-
-Write 2-3 sentences describing the relationship between the bug, the symptom, and the failure-inducing input.
