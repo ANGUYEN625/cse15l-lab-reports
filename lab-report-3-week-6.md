@@ -2,15 +2,13 @@
 
 ## Streamlining ssh Configuration
 
-Streamlining ssh Configuration
+![Image](./Screenshot%20(915).png)
 
-Show your .ssh/config file, and how you edited it (with VScode, another program, etc)
-
-Show the ssh command logging you into your account using just the alias you chose.
+![Image](./Screenshot%20(922).png)
 
 Show an scp command copying a file to your account using just the alias you chose.
 
-Setup Github Access from ieng6
+## Set Up Github Access from ieng6
 Show where the public key you made is stored on Github and in your user account (screenshot).
 
 Show where the private key you made is stored on your user account (but not its contents) as a screenshot.
@@ -19,7 +17,7 @@ Show running git commands to commit and push a change to Github while logged int
 
 Show a link for the resulting commit.
 
-Copy whole directories with scp -r
+## Copy Whole Directories With `scp -r`
 
 Show copying your whole markdown-parse directory to your ieng6 account.
 
