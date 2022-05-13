@@ -6,7 +6,7 @@
 
 ![Image](./Screenshot%20(922).png)
 
-Show an scp command copying a file to your account using just the alias you chose.
+![Image](./Screenshot%20(932).png)
 
 ## Set Up Github Access from ieng6
 Show where the public key you made is stored on Github and in your user account (screenshot).
