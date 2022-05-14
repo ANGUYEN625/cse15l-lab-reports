@@ -9,6 +9,11 @@
 ![Image](./Screenshot%20(932).png)
 
 ## Set Up Github Access from ieng6
+
+![Image](./Screenshot%20(941).png)
+
+![Image](./Screenshot%20(943).png)
+
 Show where the public key you made is stored on Github and in your user account (screenshot).
 
 Show where the private key you made is stored on your user account (but not its contents) as a screenshot.
