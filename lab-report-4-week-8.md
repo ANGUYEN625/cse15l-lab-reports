@@ -24,7 +24,7 @@ Snippet 2: failed
 
 Snippet 3: failed
 
-* We can add a condition where is the 
+* The link is only recodnezed when there brackets/parentheses are on the next consecutive line. Anything more than that is not a link. Because of this, I think there needs to be a more involved change.
 
 ## Reviewed `markdown-parse`:
 
@@ -40,7 +40,8 @@ Snippet 1: failed
 
 Snippet 2: failed
 
-* It could 
+* It could also use a condition where it checks if the close bracket is in front of an open paretheses to indicate if there is a valid link.
 
 Snippet 3: failed
 
+* In the same way with my code, I think this needs a more extensive change since the number of lines are now needed to be accounted for.
